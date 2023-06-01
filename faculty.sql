@@ -1,0 +1,12 @@
+#create database faculty;
+#create table material ( s_code int primary key not null , proof_id int references staff (id), name varchar(50));
+#create  table staff(id int primary key auto_increment, first_name varchar(30) not null,last_name varchar(30) not null, dept_name varchar(30) not null , degree varchar(30) not null );
+#create table student ( id int  , first_name varchar(30) not null, last_name varchar(30) not null, level int not null , sub_code int references material (s_code) , d_name varchar(70) not null, grade varchar(10));
+#insert into material values ( 1124, 105005 , 'E_Commerce');
+#insert into staff values ( 1, 'Ahmed' , 'Taha','cs','lectural');
+#insert into student values ( 1, 'Ahmed' , 'mohamed',1,1124,'cs','A');
+#select * from student;
+#select * from material;
+#select * from staff;
+#create table admine(user_name varchar(100), password varchar(255));
+#insert into admine values('admin','12345');
